@@ -35,9 +35,51 @@
 # list2 = list1.sort()
 
 
-list4 = list(range(10))
-print(list4)
+# list4 = list(range(10))
+# print(list4)
 
 
-list5 = [ ... for i in list4 ]
-print(list5)
+alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# stop_index 逻辑上要大于 start_index
+# 正整数stop_index>start_index
+# 负数：stop_index<start_index & step<0
+
+print(alist[1:8:3])
+# 全部，正向取值
+print(alist[:])
+# 全部，反向取值
+print(alist[-1:-11:-1])
+# stop_index > len(list), 不报错
+print(alist[-1:-12:-1])
+
+
+# # 取前一部分
+# >>> alist[:5]
+# [0, 1, 2, 3, 4]
+
+# # 取后一部分
+# >>> alist[-5:]
+# [5, 6, 7, 8, 9]
+
+# # 取偶数位置元素
+# >>> alist[::2]
+# [0, 2, 4, 6, 8]
+
+# # 取奇数位置元素
+# >>> alist[1::2]
+# [1, 3, 5, 7, 9]
+
+
+
+
+# alist[:0] = ['a','b','c']
+# print(alist)
+
+alist[1:3] = ['a','b','c']
+print(alist)
+
+
+string = "abcde"
+print(string[1:3])
+
+
